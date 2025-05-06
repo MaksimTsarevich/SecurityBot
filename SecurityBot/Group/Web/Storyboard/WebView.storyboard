@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="WebViewController" customModule="SecurityBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TH8-g5-c2I">
+                                <rect key="frame" x="0.0" y="47" width="390" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOF-LQ-Qb4">
+                                        <rect key="frame" x="25" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Wo3-gW-zLm"/>
+                                            <constraint firstAttribute="width" constant="40" id="jBI-Sn-ttg"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="BackCrossImage"/>
+                                        <connections>
+                                            <action selector="backAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="scL-uB-uzm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DOF-LQ-Qb4" firstAttribute="centerY" secondItem="TH8-g5-c2I" secondAttribute="centerY" id="ax3-LJ-BFl"/>
+                                    <constraint firstItem="DOF-LQ-Qb4" firstAttribute="leading" secondItem="TH8-g5-c2I" secondAttribute="leading" constant="25" id="dvn-Q8-Vc6"/>
+                                    <constraint firstAttribute="height" constant="40" id="npW-nB-yn1"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-4t-9KB">
+                                <rect key="frame" x="0.0" y="87" width="390" height="757"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TH8-g5-c2I" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4Au-yN-JWK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aVu-4t-9KB" secondAttribute="trailing" id="7ZS-0Q-qrU"/>
+                            <constraint firstItem="TH8-g5-c2I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LeM-DE-wMP"/>
+                            <constraint firstAttribute="bottom" secondItem="aVu-4t-9KB" secondAttribute="bottom" id="Nc5-fH-JiJ"/>
+                            <constraint firstItem="aVu-4t-9KB" firstAttribute="top" secondItem="TH8-g5-c2I" secondAttribute="bottom" id="gAz-41-eN0"/>
+                            <constraint firstItem="aVu-4t-9KB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sK1-1M-QMV"/>
+                            <constraint firstAttribute="trailing" secondItem="TH8-g5-c2I" secondAttribute="trailing" id="xWB-KQ-c67"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="aVu-4t-9KB" id="vwa-Bv-CJF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackCrossImage" width="24" height="24"/>
+    </resources>
+</document>

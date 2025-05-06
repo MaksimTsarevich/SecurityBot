@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.ttf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-SemiBold.ttf">
+            <string>Barlow-SemiBold</string>
+        </array>
+        <array key="Thunder-LC.ttf">
+            <string>Thunder-LC</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Cleaner Scan View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CleanerScanViewController" customModule="SecurityBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CleanerScanBack" translatesAutoresizingMaskIntoConstraints="NO" id="RkK-t3-Ofl">
+                                <rect key="frame" x="0.0" y="61" width="390" height="151"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="sMA-TC-csy">
+                                <rect key="frame" x="178.33333333333334" y="63.000000000000007" width="33.333333333333343" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" name="Thunder-LC" family="Thunder" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xk-kq-dij">
+                                <rect key="frame" x="25" y="53.333333333333343" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="KYe-oR-qrc"/>
+                                    <constraint firstAttribute="height" constant="40" id="Odn-xZ-7Wa"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="BackIcon"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="b63-Yd-YNP"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DuplicatePhotoImage" translatesAutoresizingMaskIntoConstraints="NO" id="WUF-ed-dd1">
+                                <rect key="frame" x="102" y="292.66666666666669" width="186" height="186"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KU4-49-aEd">
+                                <rect key="frame" x="20" y="498.66666666666669" width="350" height="120.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8Um-G4-mZn" customClass="AnimatedLabel" customModule="SecurityBot" customModuleProvider="target">
+                                        <rect key="frame" x="152.33333333333334" y="0.0" width="45.333333333333343" height="27.666666666666668"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="1gD-8f-Tpm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thunder-LC" family="Thunder" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-rz-FgN" customClass="CPLoadingView" customModule="SecurityBot" customModuleProvider="target">
+                                        <rect key="frame" x="143" y="56.666666666666686" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="INP-vq-O4Z"/>
+                                            <constraint firstAttribute="height" constant="64" id="lkc-fh-xNN"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTHING FOUNDED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQa-4T-S9V">
+                                        <rect key="frame" x="89.333333333333329" y="120.66666666666669" width="171.66666666666669" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="hMI-OR-BTw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Uf-Rh-De3">
+                                <rect key="frame" x="25" y="734" width="340" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="EI6-Os-JOk"/>
+                                    <constraint firstAttribute="height" constant="54" id="JnH-hS-YDR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Barlow-SemiBold" family="Barlow" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START SCAN">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="scanButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Vuh-0r-tOv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.035000000000000003" green="0.039" blue="0.078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Uf-Rh-De3" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="0M8-VS-ns5"/>
+                            <constraint firstItem="sMA-TC-csy" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ENH-XE-bZB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2Uf-Rh-De3" secondAttribute="bottom" constant="22" id="NvN-Ek-R38"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RkK-t3-Ofl" secondAttribute="trailing" id="TGU-aW-LhH"/>
+                            <constraint firstItem="KU4-49-aEd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ZLs-rz-oY8"/>
+                            <constraint firstItem="WUF-ed-dd1" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.9" id="c6z-Mn-iXp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="RkK-t3-Ofl" secondAttribute="bottom" constant="598" id="h7z-j8-9Uh"/>
+                            <constraint firstItem="6xk-kq-dij" firstAttribute="centerY" secondItem="sMA-TC-csy" secondAttribute="centerY" id="jEd-Jw-GQT"/>
+                            <constraint firstItem="RkK-t3-Ofl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lsu-mi-OFJ"/>
+                            <constraint firstItem="WUF-ed-dd1" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="nH0-Xg-sHk"/>
+                            <constraint firstItem="RkK-t3-Ofl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="14" id="ob7-xs-NOB"/>
+                            <constraint firstItem="6xk-kq-dij" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="pSk-1J-J28"/>
+                            <constraint firstItem="KU4-49-aEd" firstAttribute="top" secondItem="WUF-ed-dd1" secondAttribute="bottom" constant="20" id="phU-j3-nUv"/>
+                            <constraint firstItem="sMA-TC-csy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="qHn-ML-yuh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KU4-49-aEd" secondAttribute="trailing" constant="20" id="z62-xD-2Xh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CleanerImage" destination="WUF-ed-dd1" id="aSh-K1-dQP"/>
+                        <outlet property="cleanerNameLabel" destination="8Um-G4-mZn" id="CIs-xm-kaa"/>
+                        <outlet property="loadingView" destination="ehZ-rz-FgN" id="mns-du-oU3"/>
+                        <outlet property="notFoundLabel" destination="FQa-4T-S9V" id="rcA-TW-1Wz"/>
+                        <outlet property="scanButtonView" destination="2Uf-Rh-De3" id="sjJ-8A-uy1"/>
+                        <outlet property="scanButtonWidth" destination="EI6-Os-JOk" id="Op3-tI-19u"/>
+                        <outlet property="stackviewToTopConstraint" destination="phU-j3-nUv" id="bMG-j6-i7Z"/>
+                        <outlet property="titleLabel" destination="sMA-TC-csy" id="kcw-KW-zIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.923076923076923" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackIcon" width="24" height="24"/>
+        <image name="CleanerScanBack" width="375" height="151"/>
+        <image name="DuplicatePhotoImage" width="186" height="186"/>
+    </resources>
+</document>

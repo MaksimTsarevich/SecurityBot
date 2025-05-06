@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.ttf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.ttf">
+            <string>Barlow-Regular</string>
+        </array>
+        <array key="Barlow-SemiBold.ttf">
+            <string>Barlow-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Access View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AccessViewController" customModule="SecurityBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lr-r9-XEt">
+                                <rect key="frame" x="25" y="192" width="340" height="473"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery Access" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lhw-Wo-zDJ">
+                                        <rect key="frame" x="97" y="23" width="146" height="20"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AccessBackImage" translatesAutoresizingMaskIntoConstraints="NO" id="uTU-xl-eFx">
+                                        <rect key="frame" x="0.0" y="43" width="340" height="136"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AccessPhotoImage" translatesAutoresizingMaskIntoConstraints="NO" id="0vH-fS-FF7">
+                                        <rect key="frame" x="87" y="104" width="166" height="150"/>
+                                    </imageView>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OF-jW-4Te">
+                                        <rect key="frame" x="24" y="396" width="292" height="54"/>
+                                        <color key="backgroundColor" red="1" green="0.76200000000000001" blue="0.14899999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="DbS-L7-hPN"/>
+                                            <constraint firstAttribute="width" constant="292" id="nSn-L8-Pvv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Barlow-SemiBold" family="Barlow" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="SETTINGS"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="settingsAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Z6v-Et-H0B"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Zdb-ZH-qek">
+                                        <rect key="frame" x="25" y="334" width="290" height="41"/>
+                                        <string key="text">For cleaner to scan duplicates, allow
+access to the gallery in the settings</string>
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALLERY ACCESS REQUIRED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fdA-cQ-Lfo">
+                                        <rect key="frame" x="59" y="295" width="222" height="20"/>
+                                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDB-q6-8lt">
+                                        <rect key="frame" x="277" y="13" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="I5d-7Y-PP5"/>
+                                            <constraint firstAttribute="height" constant="40" id="KOq-PO-Rxx"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="BackCrossImage"/>
+                                        <connections>
+                                            <action selector="backButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7pg-47-A8Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.034000000000000002" green="0.041000000000000002" blue="0.079000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uTU-xl-eFx" secondAttribute="trailing" id="3Aa-K7-gvq"/>
+                                    <constraint firstItem="lhw-Wo-zDJ" firstAttribute="leading" secondItem="8lr-r9-XEt" secondAttribute="leading" constant="97" id="8Lo-5V-FrN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zdb-ZH-qek" secondAttribute="trailing" constant="25" id="8ON-UI-4i5"/>
+                                    <constraint firstAttribute="trailing" secondItem="WDB-q6-8lt" secondAttribute="trailing" constant="23" id="BEH-88-ATg"/>
+                                    <constraint firstItem="0vH-fS-FF7" firstAttribute="top" secondItem="8lr-r9-XEt" secondAttribute="top" constant="104" id="EEs-Xy-Hdm"/>
+                                    <constraint firstItem="0vH-fS-FF7" firstAttribute="leading" secondItem="8lr-r9-XEt" secondAttribute="leading" constant="87" id="GXi-c3-lAM"/>
+                                    <constraint firstAttribute="bottom" secondItem="8OF-jW-4Te" secondAttribute="bottom" constant="23" id="JEF-EB-2xf"/>
+                                    <constraint firstAttribute="width" constant="340" id="NFJ-oR-IWK"/>
+                                    <constraint firstItem="Zdb-ZH-qek" firstAttribute="leading" secondItem="8lr-r9-XEt" secondAttribute="leading" constant="25" id="QJ2-Qk-VgO"/>
+                                    <constraint firstItem="Zdb-ZH-qek" firstAttribute="top" secondItem="fdA-cQ-Lfo" secondAttribute="bottom" constant="19" id="UPm-iB-Z9N"/>
+                                    <constraint firstItem="lhw-Wo-zDJ" firstAttribute="top" secondItem="8lr-r9-XEt" secondAttribute="top" constant="23" id="Wxr-3B-xvK"/>
+                                    <constraint firstItem="8OF-jW-4Te" firstAttribute="top" secondItem="Zdb-ZH-qek" secondAttribute="bottom" constant="21" id="ZVl-kU-eW5"/>
+                                    <constraint firstAttribute="height" constant="473" id="ZaO-b0-7U2"/>
+                                    <constraint firstAttribute="trailing" secondItem="fdA-cQ-Lfo" secondAttribute="trailing" constant="59" id="dP8-ZG-APQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="lhw-Wo-zDJ" secondAttribute="trailing" constant="97" id="exU-8V-1JZ"/>
+                                    <constraint firstItem="fdA-cQ-Lfo" firstAttribute="leading" secondItem="8lr-r9-XEt" secondAttribute="leading" constant="59" id="fbq-nW-bcq"/>
+                                    <constraint firstItem="uTU-xl-eFx" firstAttribute="leading" secondItem="8lr-r9-XEt" secondAttribute="leading" id="gDN-uJ-c6X"/>
+                                    <constraint firstAttribute="trailing" secondItem="0vH-fS-FF7" secondAttribute="trailing" constant="87" id="nmt-HR-KZj"/>
+                                    <constraint firstItem="WDB-q6-8lt" firstAttribute="centerY" secondItem="lhw-Wo-zDJ" secondAttribute="centerY" id="qBM-8f-NlJ"/>
+                                    <constraint firstItem="uTU-xl-eFx" firstAttribute="top" secondItem="lhw-Wo-zDJ" secondAttribute="bottom" id="thn-Kx-2Ba"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8OF-jW-4Te" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="UPa-bR-Jwo"/>
+                            <constraint firstItem="8lr-r9-XEt" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="UfM-Xj-Qpv"/>
+                            <constraint firstItem="8lr-r9-XEt" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="qp0-4s-MdA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accessImage" destination="0vH-fS-FF7" id="xg2-Ai-vK6"/>
+                        <outlet property="imageToTopViewConstraint" destination="EEs-Xy-Hdm" id="Eq9-HF-6UN"/>
+                        <outlet property="subtitle1Label" destination="fdA-cQ-Lfo" id="aV9-rr-WXQ"/>
+                        <outlet property="subtitle2Label" destination="Zdb-ZH-qek" id="XKM-1D-sEs"/>
+                        <outlet property="titleLabel" destination="lhw-Wo-zDJ" id="41s-mX-u1w"/>
+                        <outlet property="viewWidthConstraint" destination="NFJ-oR-IWK" id="vEF-dB-7cq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.615384615384613" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AccessBackImage" width="325" height="136"/>
+        <image name="AccessPhotoImage" width="150" height="150"/>
+        <image name="BackCrossImage" width="24" height="24"/>
+    </resources>
+</document>

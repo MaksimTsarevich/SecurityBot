@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.ttf">
+            <string>Barlow-Regular</string>
+        </array>
+        <array key="Barlow-SemiBold.ttf">
+            <string>Barlow-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Identification View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="IdentificationViewController" customModule="SecurityBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHX-Xx-qLo">
+                                <rect key="frame" x="25" y="243.66666666666663" width="340" height="370"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IdentificationBack" translatesAutoresizingMaskIntoConstraints="NO" id="3JV-U8-Phn">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="132.66666666666666"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FaceIDLogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="Zxd-E2-We9">
+                                        <rect key="frame" x="95" y="39.666666666666657" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="EVp-O5-zQm"/>
+                                            <constraint firstAttribute="width" constant="150" id="bnc-PY-Xsk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAT-IR-Etz">
+                                        <rect key="frame" x="24" y="294" width="129" height="54"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="6rA-G4-ufG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Barlow-SemiBold" family="Barlow" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="CANCEL"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="04W-9f-fbh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jla-fG-tYA">
+                                        <rect key="frame" x="187" y="294" width="129" height="54"/>
+                                        <color key="backgroundColor" red="1" green="0.76078431372549016" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="qUD-bg-NPV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Barlow-SemiBold" family="Barlow" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="doneAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Wfo-gi-X8s"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DO YOU WANT TO TURN IT ON?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmX-LT-I2Y">
+                                        <rect key="frame" x="58.333333333333329" y="204.66666666666666" width="223.33333333333337" height="20"/>
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-Ys-z3X">
+                                        <rect key="frame" x="71.666666666666671" y="236.66666666666666" width="196.66666666666663" height="28.999999999999972"/>
+                                        <string key="text">Enter passcode to close secret space,
+imported content will not be removed</string>
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.034000000000000002" green="0.041000000000000002" blue="0.079000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="9nu-im-2Tt"/>
+                                    <constraint firstItem="Zxd-E2-We9" firstAttribute="top" secondItem="3JV-U8-Phn" secondAttribute="centerY" multiplier="0.6" id="C9l-tT-L5U"/>
+                                    <constraint firstAttribute="width" constant="340" id="Ena-VD-R3r"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jla-fG-tYA" secondAttribute="bottom" constant="22" id="HDz-tf-6YW"/>
+                                    <constraint firstItem="Jla-fG-tYA" firstAttribute="leading" secondItem="sHX-Xx-qLo" secondAttribute="centerX" multiplier="1.1" id="IBU-34-dpJ"/>
+                                    <constraint firstItem="3JV-U8-Phn" firstAttribute="leading" secondItem="sHX-Xx-qLo" secondAttribute="leading" id="KUr-aL-XAo"/>
+                                    <constraint firstAttribute="trailing" secondItem="3JV-U8-Phn" secondAttribute="trailing" id="N0S-En-XiV"/>
+                                    <constraint firstItem="Zxd-E2-We9" firstAttribute="centerX" secondItem="sHX-Xx-qLo" secondAttribute="centerX" id="X04-fJ-a3H"/>
+                                    <constraint firstItem="aE5-Ys-z3X" firstAttribute="top" secondItem="CmX-LT-I2Y" secondAttribute="bottom" constant="12" id="Ywb-4R-hIj"/>
+                                    <constraint firstItem="gAT-IR-Etz" firstAttribute="leading" secondItem="sHX-Xx-qLo" secondAttribute="leading" constant="24" id="bBK-y8-rIg"/>
+                                    <constraint firstItem="aE5-Ys-z3X" firstAttribute="centerX" secondItem="sHX-Xx-qLo" secondAttribute="centerX" id="ciC-yG-Y3z"/>
+                                    <constraint firstItem="CmX-LT-I2Y" firstAttribute="top" secondItem="Zxd-E2-We9" secondAttribute="bottom" constant="15" id="hqb-0Q-0AM"/>
+                                    <constraint firstItem="CmX-LT-I2Y" firstAttribute="centerX" secondItem="sHX-Xx-qLo" secondAttribute="centerX" id="nZn-6J-MaA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jla-fG-tYA" secondAttribute="trailing" constant="24" id="oJe-kB-QBk"/>
+                                    <constraint firstItem="gAT-IR-Etz" firstAttribute="trailing" secondItem="sHX-Xx-qLo" secondAttribute="centerX" multiplier="0.9" id="snV-PH-GEe"/>
+                                    <constraint firstItem="3JV-U8-Phn" firstAttribute="top" secondItem="sHX-Xx-qLo" secondAttribute="top" id="tMR-Hy-AUW"/>
+                                    <constraint firstAttribute="bottom" secondItem="gAT-IR-Etz" secondAttribute="bottom" constant="22" id="yUL-4Z-qSZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sHX-Xx-qLo" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="1TP-mM-4yC"/>
+                            <constraint firstItem="sHX-Xx-qLo" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="vGu-eN-ORw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="securityImage" destination="Zxd-E2-We9" id="odq-t5-Sbb"/>
+                        <outlet property="subTitleLabel" destination="aE5-Ys-z3X" id="Gra-Qa-DUb"/>
+                        <outlet property="titleLabel" destination="CmX-LT-I2Y" id="PTh-DX-bBu"/>
+                        <outlet property="viewWidthConstraint" destination="Ena-VD-R3r" id="tz9-g8-7gH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FaceIDLogoImage" width="150" height="150"/>
+        <image name="IdentificationBack" width="325" height="132.66667175292969"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

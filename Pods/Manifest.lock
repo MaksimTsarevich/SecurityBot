@@ -1,0 +1,44 @@
+PODS:
+  - CocoaImageHashing (1.7.0)
+  - KeychainSwift (20.0.0)
+  - Kingfisher (6.3.1)
+  - lottie-ios (3.5.0)
+  - MTCircleChart (1.0.1)
+  - NDT7 (0.0.4)
+  - PanModal (1.2.7)
+  - TLPhotoPicker (2.1.9)
+
+DEPENDENCIES:
+  - CocoaImageHashing
+  - KeychainSwift (~> 20.0)
+  - Kingfisher
+  - lottie-ios
+  - MTCircleChart
+  - NDT7 (= 0.0.4)
+  - PanModal
+  - TLPhotoPicker
+
+SPEC REPOS:
+  trunk:
+    - CocoaImageHashing
+    - KeychainSwift
+    - Kingfisher
+    - lottie-ios
+    - MTCircleChart
+    - NDT7
+    - PanModal
+    - TLPhotoPicker
+
+SPEC CHECKSUMS:
+  CocoaImageHashing: 2c8efd6dd60f9030cd54086b34ffc48e927821c3
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
+  MTCircleChart: 9a4741b499343860aa8d4111c50d3dcae5a8ff36
+  NDT7: db6448ebf5648c2f1721bf3b473470ab201f4145
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  TLPhotoPicker: 939c40eaad130b69f9571e61e021e8120fa76329
+
+PODFILE CHECKSUM: 8c5431daa02fb95c8e446c067b38752acf3de98d
+
+COCOAPODS: 1.16.2

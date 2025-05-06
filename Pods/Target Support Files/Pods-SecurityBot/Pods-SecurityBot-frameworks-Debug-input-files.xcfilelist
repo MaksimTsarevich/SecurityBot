@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-SecurityBot/Pods-SecurityBot-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CocoaImageHashing/CocoaImageHashing.framework
+${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/MTCircleChart/MTCircleChart.framework
+${BUILT_PRODUCTS_DIR}/NDT7/NDT7.framework
+${BUILT_PRODUCTS_DIR}/PanModal/PanModal.framework
+${BUILT_PRODUCTS_DIR}/TLPhotoPicker/TLPhotoPicker.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

@@ -1,0 +1,168 @@
+{
+  "identifier" : "57E31681",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "9BF24B96",
+      "localizations" : [
+
+      ],
+      "name" : "FirstPremium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "4A149B72",
+          "introductoryOffer" : {
+            "internalID" : "A896B986",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P3D"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.cleaner.weekly.trial",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "WeekTrialPay",
+          "subscriptionGroupID" : "9BF24B96",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "99.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "E9E4EFFE",
+          "introductoryOffer" : {
+            "internalID" : "435EF044",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P3D"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.cleaner.monthly.trial",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "MonthTrialPay",
+          "subscriptionGroupID" : "9BF24B96",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "999.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "D5A347BC",
+          "introductoryOffer" : {
+            "internalID" : "945C974B",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P3D"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.cleaner.year.trial",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "YearTrialPay",
+          "subscriptionGroupID" : "9BF24B96",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "C5B14760",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.cleaner.weekly",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Week",
+          "subscriptionGroupID" : "9BF24B96",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "99.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "E2CAE6D3",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.cleaner.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Month",
+          "subscriptionGroupID" : "9BF24B96",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "subscriptionOffersKeyPair" : {
+    "id" : "C9A38FC5",
+    "privateKey" : "MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgsuA1tUEV7MCMMGriNnUHEQ8V0o48YII1SFZWuA3kEFSgCgYIKoZIzj0DAQehRANCAATEZKTf9Ji6vw0JIhVKse9zNrTQRwe7iqode0GAaqny1wkLp0ct5dIuE+kB/N86HXw+LPCIct1FZznporQVTrCx"
+  },
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

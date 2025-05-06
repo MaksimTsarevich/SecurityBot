@@ -1,0 +1,6 @@
+framework module MTCircleChart {
+  umbrella header "MTCircleChart-umbrella.h"
+
+  export *
+  module * { export * }
+}
